@@ -2,12 +2,19 @@
 using System.Web;
 using System.Web.UI;
 using MyFirstWeb.@class.db;
-
+using VoteMe.@class.db;
 namespace VoteMe
 {
 
     public partial class Default : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+
+                Session.RemoveAll();
+             
+        }
 		public void doLogin(object sender, EventArgs args)
 		{
 

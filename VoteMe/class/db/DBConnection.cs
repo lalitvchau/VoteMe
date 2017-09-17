@@ -1,6 +1,6 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
-namespace MyFirstWeb.@class.db
+namespace VoteMe.@class.db
 {
     public class DBConnection
     {
@@ -21,13 +21,14 @@ namespace MyFirstWeb.@class.db
 				return null;
 			}
 
-            return null;
+            //return null;
         }
         public void closeConnection(MySqlConnection con){
             try
             {
                 con.Close();
-            }catch(Exception e){}
+            }
+            catch (Exception e) { string msg = e.Message; }
         }
 
     }

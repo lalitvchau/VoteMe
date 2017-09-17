@@ -65,8 +65,8 @@
 								<tr>
 									<td>
 										<div class="input-group">
-											<span class="input-group-addon" id="basic-addon1">@</span>
-									<asp:TextBox class="form-control" id="txtUserNameEle" placeholder="Username or Email" Width="100%" MaxLength="20" runat="server"/>
+											<span style="background-color:OrangeRed" class="input-group-addon" id="basic-addon1">@</span>
+									<asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightCoral" id="txtUserNameEle" placeholder="Username or Email" Width="100%" MaxLength="20" runat="server"/>
 									</div>
 									</td>
 									</tr>
@@ -74,13 +74,13 @@
 									<td>&nbsp<asp:Label runat="server" id="msg" ForeColor="WhiteSmoke"/></td>
 									</tr>
 								<tr>
-                                    <td><asp:TextBox class="form-control" id="txtPasswordEle" placeholder="Password" runat="server" MaxLength="20" Width="100%"  TextMode="Password"/></td>
+                                    <td><asp:TextBox  ForeColor="WhiteSmoke" class="form-control" BackColor="LightCoral" id="txtPasswordEle" placeholder="Password" runat="server" MaxLength="20" Width="100%"  TextMode="Password"/></td>
 								</tr>
                                  <tr>
 									<td>&nbsp</td>
 									</tr>
 								<tr>
-                                    <td ><asp:Button Width="50%" class="btn btn-success" id="loginEle" OnClick="doLogin" runat="server" Text="Sign In"/></td>
+                                    <td ><asp:Button Width="50%" class="btn btn-danger border-success" id="loginEle" OnClick="doLogin" runat="server" Text="Sign In"/></td>
                                 </tr>
 								<tr>
 									<td><p class="card-text"><a class="nav-link" style="color:white;" href="elections/signup.aspx">Register a new account ... </a>
@@ -113,16 +113,16 @@
                                 <tr>
                                     <td>
                                         <div class="input-group">
-											<span class="input-group-addon" id="basic-addon2">@</span>
-                                    <asp:TextBox class="form-control" id="txtAdhar" placeholder="Aadhar Number" Width="100%" MaxLength="12" runat="server"/>
+											<span class="input-group-addon" style="background-color:SeaGreen" id="basic-addon2">@</span>
+                                    <asp:TextBox ForeColor="DarkGreen" class="form-control btn-success border-danger" BackColor="PaleGreen" id="txtAdhar" placeholder="Aadhar Number" Width="100%" MaxLength="12" runat="server"/>
                                 </div></td>
 									</tr>
 								<tr><td>&nbsp<asp:Label runat="server" id="msg1" ForeColor="WhiteSmoke"/></td>
 									</tr>
 								<tr>
-                                    <td><asp:TextBox class="form-control" id="txtPass" placeholder="Mobile Nubmer (Aadhar)" runat="server" MaxLength="20" Width="100%"  TextMode="Password"/></td></tr>
+                                    <td><asp:TextBox ForeColor="DarkGreen" class="form-control " BackColor="PaleGreen" id="txtPass" placeholder="Mobile Nubmer (Aadhar)" TextMode="Password" runat="server" MaxLength="11" Width="100%"  /></td></tr>
                                     <tr><td>&nbsp</td></tr><tr>
-                                    <td ><asp:Button Width="50%" class="btn btn-dark" id="login" runat="server" OnClick="doLoginPeople" Text="Sign In"/></td>
+                                    <td ><asp:Button Width="50%" class="btn btn-success border-danger" id="login" runat="server" OnClick="doLoginPeople" Text="Sign In"/></td>
                                 </tr>
 
                                 

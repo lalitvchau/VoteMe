@@ -1,14 +1,27 @@
 ﻿<Properties StartupConfiguration="{A49EF9CD-81C4-4B90-8AE8-2B9505DADD01}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VoteMe/Default.aspx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VoteMe/class/db/Election.cs">
     <Files>
-      <File FileName="VoteMe/Default.aspx" Line="47" Column="50" />
-      <File FileName="VoteMe/Default.aspx.designer.cs" Line="37" Column="1" />
-      <File FileName="VoteMe/Default.aspx.cs" Line="38" Column="2" />
+      <File FileName="VoteMe/elections/eleHome.aspx" Line="24" Column="64" />
+      <File FileName="VoteMe/elections/eleHome.aspx.cs" Line="69" Column="50" />
+      <File FileName="VoteMe/class/db/Officer.cs" Line="135" Column="6" />
+      <File FileName="VoteMe/class/db/Events.cs" Line="93" Column="51" />
+      <File FileName="VoteMe/elections/AddNewEvent.aspx.cs" Line="125" Column="12" />
+      <File FileName="VoteMe/elections/AddNewEvent.aspx" Line="59" Column="198" />
+      <File FileName="VoteMe/class/db/Election.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/elections/signup.aspx.cs" relfile="VoteMe/elections/signup.aspx.cs" line="21" column="56" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/elections/AddNewEvent.aspx.cs" relfile="VoteMe/elections/AddNewEvent.aspx.cs" line="70" column="1" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/class/db/Election.cs" relfile="VoteMe/class/db/Election.cs" line="56" column="1" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/class/db/Election.cs" relfile="VoteMe/class/db/Election.cs" line="97" column="1" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/class/db/Election.cs" relfile="VoteMe/class/db/Election.cs" line="139" column="1" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/class/db/Election.cs" relfile="VoteMe/class/db/Election.cs" line="183" column="1" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/class/db/Election.cs" relfile="VoteMe/class/db/Election.cs" line="213" column="1" />
+      <Breakpoint file="/Users/vivaan2890/Projects/VoteMe/VoteMe/elections/AddNewEvent.aspx.cs" relfile="VoteMe/elections/AddNewEvent.aspx.cs" line="101" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.VoteMe PreferredExecutionTarget="MonoDevelop.Default" />

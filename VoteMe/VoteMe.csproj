@@ -72,12 +72,15 @@
     <Content Include="resource\bootstrap\js\bootstrap.js" />
     <Content Include="resource\bootstrap\js\bootstrap.min.js" />
     <Content Include="resource\jquery\jquery-3.1.1.min.js" />
-    <Content Include="elections\signup.aspx" />
     <Content Include="elections\eleHome.aspx" />
     <Content Include="elections\peoples\home.aspx" />
     <Content Include="images\a.jpg" />
     <Content Include="images\b.jpg" />
     <Content Include="images\c.jpg" />
+    <Content Include="images\signup.jpg" />
+    <Content Include="elections\signup.aspx" />
+    <Content Include="elections\AddNewEvent.aspx" />
+    <Content Include="elections\EditNewEvent.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -110,6 +113,22 @@
     <Compile Include="elections\peoples\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="class\db\SignUp.cs" />
+    <Compile Include="class\db\Officer.cs" />
+    <Compile Include="elections\AddNewEvent.aspx.cs">
+      <DependentUpon>AddNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\AddNewEvent.aspx.designer.cs">
+      <DependentUpon>AddNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\EditNewEvent.aspx.cs">
+      <DependentUpon>EditNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\EditNewEvent.aspx.designer.cs">
+      <DependentUpon>EditNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="class\db\Election.cs" />
+    <Compile Include="class\db\Events.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
