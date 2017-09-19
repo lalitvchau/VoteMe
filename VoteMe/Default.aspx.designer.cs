@@ -9,28 +9,28 @@
 //------------------------------------------------------------------------------
 
 namespace VoteMe {
-    
-    
-    public partial class Default {
-        
-        protected System.Web.UI.HtmlControls.HtmlForm officerLoginForm;
-        
-        protected System.Web.UI.WebControls.TextBox txtUserNameEle;
-        
-        protected System.Web.UI.WebControls.Label msg;
-        
-        protected System.Web.UI.WebControls.TextBox txtPasswordEle;
-        
-        protected System.Web.UI.WebControls.Button loginEle;
-        
-        protected System.Web.UI.HtmlControls.HtmlForm loginForm;
-        
-        protected System.Web.UI.WebControls.TextBox txtAdhar;
-        
-        protected System.Web.UI.WebControls.Label msg1;
-        
-        protected System.Web.UI.WebControls.TextBox txtPass;
-        
-        protected System.Web.UI.WebControls.Button login;
-    }
+	
+	
+	public partial class Default {
+		
+		protected System.Web.UI.HtmlControls.HtmlForm officerLoginForm;
+		
+		protected System.Web.UI.WebControls.TextBox txtUserNameEle;
+		
+		protected System.Web.UI.WebControls.Label msg;
+		
+		protected System.Web.UI.WebControls.TextBox txtPasswordEle;
+		
+		protected System.Web.UI.WebControls.Button loginEle;
+		
+		protected System.Web.UI.HtmlControls.HtmlForm loginForm;
+		
+		protected System.Web.UI.WebControls.TextBox txtAdhar;
+		
+		protected System.Web.UI.WebControls.Label msg1;
+		
+		protected System.Web.UI.WebControls.TextBox txtPass;
+		
+		protected System.Web.UI.WebControls.Button login;
+	}
 }

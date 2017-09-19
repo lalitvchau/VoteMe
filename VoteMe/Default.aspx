@@ -120,7 +120,7 @@
 								<tr><td>&nbsp<asp:Label runat="server" id="msg1" ForeColor="WhiteSmoke"/></td>
 									</tr>
 								<tr>
-                                    <td><asp:TextBox ForeColor="DarkGreen" class="form-control " BackColor="PaleGreen" id="txtPass" placeholder="Mobile Nubmer (Aadhar)" TextMode="Password" runat="server" MaxLength="11" Width="100%"  /></td></tr>
+                                    <td><asp:TextBox ForeColor="DarkGreen" class="form-control " BackColor="PaleGreen" id="txtPass" placeholder="Mobile Nubmer"  runat="server" MaxLength="11" Width="100%"  /></td></tr>
                                     <tr><td>&nbsp</td></tr><tr>
                                     <td ><asp:Button Width="50%" class="btn btn-success border-danger" id="login" runat="server" OnClick="doLoginPeople" Text="Sign In"/></td>
                                 </tr>

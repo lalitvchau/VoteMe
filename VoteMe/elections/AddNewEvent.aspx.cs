@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 
@@ -69,6 +70,59 @@ namespace VoteMe.elections
 
 		public void addEvent(object sender, EventArgs args)
 		{
+            //vailidations statements
+
+            if(txtEventName.Text.Trim().Length<=0){
+                msg.Text = "Event Name should not have Eampty";
+                txtEventName.Focus();
+                return;
+            }
+
+            if (txtEventDate.SelectedDate.Year==1)
+			{
+				msg.Text = "Events Date should be selected";
+                txtEventDate.Focus();
+                return;
+			}
+            if(txtEventDate.SelectedDate<=System.DateTime.Today){
+				msg.Text = "Events Date is should not be today and Past dates,It should be future date";
+				txtEventDate.Focus();
+				return;
+            }
+			if (txtcName1.Text.Trim().Length <= 0 || txtcParty1.Text.Trim().Length <= 0 || txtcAadhar1.Text.Trim().Length <= 0)
+			{
+				msg.Text = "Atleast One Candidates should be there";
+				txtcName1.Focus();
+				return;
+			}
+
+			if (txtEventName.Text.Trim().Length < 5)
+			{
+				msg.Text = "Event Name should be more than 4 character long";
+				txtEventName.Focus();
+				return;
+			}
+			if (txtcAadhar1.Text.Trim().Length !=12)
+			{
+				msg.Text = "Atleast AdharNumber should be 12 character long";
+                txtcAadhar1.Focus();
+				return;
+			}
+            if (!Regex.IsMatch(txtcAadhar1.Text.Trim(), @"^[0-9]*$"))
+			{
+				msg.Text = "Aadhar should be Numeric ";
+				txtcAadhar1.Focus();
+				return;
+			}
+			if (txtcName1.Text.Trim().Length < 5 || txtcParty1.Text.Trim().Length < 5 )
+			{
+				msg.Text = "Atleast One Candidates name and party name should be more the 4 character long";
+				txtcName1.Focus();
+				return;
+			}
+
+            //over
+
             Election ele = new Election();
            country = txtCountry.SelectedItem.Text.Trim();
             city = txtCity.SelectedItem.Text.Trim();
@@ -110,11 +164,11 @@ namespace VoteMe.elections
 								ele.AddCandidate(eventId, txtcAadhar2.Text.Trim(), txtcName2.Text.Trim(), txtcParty2.Text.Trim());
 								if ((txtcName3.Text.Trim() != "") && (txtcParty3.Text.Trim() != "") && (txtcAadhar3.Text.Trim() != ""))
 								{
-									ele.AddCandidate(eventId, txtcAadhar4.Text.Trim(), txtcName4.Text.Trim(), txtcParty4.Text.Trim());
-									if ((txtcName2.Text.Trim() != "") && (txtcParty2.Text.Trim() != "") && (txtcAadhar2.Text.Trim() != ""))
+									ele.AddCandidate(eventId, txtcAadhar3.Text.Trim(), txtcName3.Text.Trim(), txtcParty3.Text.Trim());
+									if ((txtcName4.Text.Trim() != "") && (txtcParty4.Text.Trim() != "") && (txtcAadhar4.Text.Trim() != ""))
 									{
-										ele.AddCandidate(eventId, txtcAadhar5.Text.Trim(), txtcName5.Text.Trim(), txtcParty5.Text.Trim());
-										if ((txtcName2.Text.Trim() != "") && (txtcParty2.Text.Trim() != "") && (txtcAadhar2.Text.Trim() != ""))
+										ele.AddCandidate(eventId, txtcAadhar4.Text.Trim(), txtcName4.Text.Trim(), txtcParty4.Text.Trim());
+										if ((txtcName5.Text.Trim() != "") && (txtcParty5.Text.Trim() != "") && (txtcAadhar5.Text.Trim() != ""))
 										{
 											ele.AddCandidate(eventId, txtcAadhar5.Text.Trim(), txtcName5.Text.Trim(), txtcParty5.Text.Trim());
 										}//5

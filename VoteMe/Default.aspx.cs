@@ -3,6 +3,7 @@ using System.Web;
 using System.Web.UI;
 using MyFirstWeb.@class.db;
 using VoteMe.@class.db;
+using System.Text.RegularExpressions;
 namespace VoteMe
 {
 
@@ -17,6 +18,20 @@ namespace VoteMe
         }
 		public void doLogin(object sender, EventArgs args)
 		{
+            if (txtUserNameEle.Text.Trim().Length <= 0 || txtPasswordEle.Text.Trim().Length <= 0)
+			{
+				msg.Text = "Username or Password should not eampty ";
+                txtUserNameEle.Focus();
+				return;
+			}
+
+            if (!Regex.IsMatch(txtUserNameEle.Text.Trim(), @"^[a-zA-Z0-9@_.]*$"))
+			{
+				msg.Text = "Username Invaild !";
+                txtUserNameEle.Focus();
+				return;
+			}
+ 
 
             if (new Login().doLogin(txtUserNameEle.Text.Trim(), txtPasswordEle.Text.Trim()))
 			{
@@ -30,6 +45,27 @@ namespace VoteMe
 		}
 		public void doLoginPeople(object sender, EventArgs args)
 		{
+
+            if(txtAdhar.Text.Trim().Length<=0|| txtPass.Text.Trim().Length <= 0){
+				msg1.Text = "Mobile Number or Aadhar should not eampty ";
+                txtAdhar.Focus();
+				return;
+            }
+
+            if (!Regex.IsMatch(txtAdhar.Text.Trim(), @"^[0-9]*$"))
+			{
+				msg1.Text = "Aadhar should be Numeric ";
+                txtAdhar.Focus();
+				return;
+			}
+			if (!Regex.IsMatch(txtPass.Text.Trim(), @"^[0-9]*$"))
+			{
+				msg1.Text = "Mobile Number should be Nuneric ";
+                txtPass.Focus();
+				return;
+			}
+			
+
 
 			if (new Login().doPeopleLogin(txtAdhar.Text.Trim(), txtPass.Text.Trim()))
 			{

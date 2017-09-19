@@ -20,7 +20,7 @@
   <img class="card-img-top" src="../../images/signup.jpg" alt="Card image cap" height="320px">
   <div class="card-body">
     <h4 class="card-title">Election Officer Registration </h4>
-    <p class="card-text">Please register with the correct informations
+    <p class="card-text">Please register with the correct informations</p><p>
 							<asp:label runat="server" id="msg"  ForeColor="WhiteSmoke" /></p>
   </div>
   <ul class="list-group list-group-flush">
@@ -34,7 +34,7 @@
 	<li class="list-group-item bg-danger"><asp:TextBox class="form-control" ForeColor="WhiteSmoke" BackColor="LightCoral" id="txtlName" placeholder="Last Name" runat="server" MaxLength="40" Width="100%"  /></li>
 	<li class="list-group-item bg-danger"><asp:TextBox class="form-control" BackColor="LightCoral" ForeColor="WhiteSmoke" id="txtMobile" placeholder="Mobile Number" runat="server" MaxLength="11" Width="100%"  /></li>	
 	<li class="list-group-item bg-danger form-control" BackColor="LightCoral"> 
-							<asp:RadioButton  runat="server" id="male" ForeColor="WhiteSmoke" GroupName="gender" Text="Male" ></asp:RadioButton>
+							<asp:RadioButton Checked="true" runat="server" id="male" ForeColor="WhiteSmoke" GroupName="gender" Text="Male" ></asp:RadioButton>
 							<asp:RadioButton runat="server" id="female" ForeColor="WhiteSmoke" GroupName="gender" Text="Female" ></asp:RadioButton>
 							<asp:RadioButton  runat="server" id="other" ForeColor="WhiteSmoke" GroupName="gender" Text="Other" ></asp:RadioButton></li>						
 	<li class="list-group-item bg-danger"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightCoral" id="txtAddr" placeholder="Address" runat="server" MaxLength="40" Width="100%"  TextMode="MultiLine" Rows="5"/></li>						

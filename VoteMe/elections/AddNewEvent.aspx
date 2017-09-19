@@ -55,7 +55,7 @@
     <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcAadhar4" placeholder="Candidate Aadhar" Width="100%" MaxLength="12" runat="server"/></li>
     <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcParty4" placeholder="Candidate Party" Width="100%" MaxLength="20" runat="server"/></li>
     <li class="list-group-item bg-dark">Fifth Candidate Details</li>
-    <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcName5" placeholder="Candidate Name" Width="100%" MaxLength="12" runat="server"/></li>
+    <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcName5" placeholder="Candidate Name" Width="100%" MaxLength="20" runat="server"/></li>
     <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcAadhar5" placeholder="Candidate Aadhar" Width="100%" MaxLength="12" runat="server"/></li>
     <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcParty5" placeholder="Candidate Party" Width="100%" MaxLength="20" runat="server"/></li>
     

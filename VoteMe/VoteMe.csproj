@@ -80,7 +80,7 @@
     <Content Include="images\signup.jpg" />
     <Content Include="elections\signup.aspx" />
     <Content Include="elections\AddNewEvent.aspx" />
-    <Content Include="elections\EditNewEvent.aspx" />
+    <Content Include="elections\peoples\Vote.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -121,14 +121,15 @@
     <Compile Include="elections\AddNewEvent.aspx.designer.cs">
       <DependentUpon>AddNewEvent.aspx</DependentUpon>
     </Compile>
-    <Compile Include="elections\EditNewEvent.aspx.cs">
-      <DependentUpon>EditNewEvent.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="elections\EditNewEvent.aspx.designer.cs">
-      <DependentUpon>EditNewEvent.aspx</DependentUpon>
-    </Compile>
     <Compile Include="class\db\Election.cs" />
     <Compile Include="class\db\Events.cs" />
+    <Compile Include="class\db\UserInfo.cs" />
+    <Compile Include="elections\peoples\Vote.aspx.cs">
+      <DependentUpon>Vote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\peoples\Vote.aspx.designer.cs">
+      <DependentUpon>Vote.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
