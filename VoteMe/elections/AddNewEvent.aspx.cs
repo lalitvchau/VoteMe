@@ -23,45 +23,46 @@ namespace VoteMe.elections
 			}
 			else
 			{
-				
-				
-                Login login = new Login();
-                MySqlDataReader rdr =  login.SelectCountry(out con);
-                txtCountry.Items.Clear();
-                while (rdr.Read())
-                {
-                    string str = rdr.GetString("country");
-                    txtCountry.Items.Add(str);
-                }
-                con.Close();
-                rdr = login.SelectState(out con);
-                txtState.Items.Clear();
-                txtState.Items.Add("None");
-				while (rdr.Read())
-				{
-					string str = rdr.GetString("state");
-					txtState.Items.Add(str);
-				}
-                con.Close();
-                rdr = login.SelectCity(out con);
-                txtCity.Items.Clear();
-                txtCity.Items.Add("None");
-				while (rdr.Read())
-				{
-					string str = rdr.GetString("city");
-					txtCity.Items.Add(str);
-				}
-				con.Close(); 
-                rdr = login.SelectLoc(out con);
-                txtLocation.Items.Clear();
-                txtLocation.Items.Add("None");
-				while (rdr.Read())
-				{
-					string str = rdr.GetString("locality");
-					txtLocation.Items.Add(str);
-				}
-				con.Close();
 
+                if (txtCountry.Items.Count==0)
+                {
+                    Login login = new Login();
+                    MySqlDataReader rdr = login.SelectCountry(out con);
+                    txtCountry.Items.Clear();
+                    while (rdr.Read())
+                    {
+                        string str = rdr.GetString("country");
+                        txtCountry.Items.Add(str);
+                    }
+                    con.Close();
+                    rdr = login.SelectState(out con);
+                    txtState.Items.Clear();
+                    txtState.Items.Add("None");
+                    while (rdr.Read())
+                    {
+                        string str = rdr.GetString("state");
+                        txtState.Items.Add(str);
+                    }
+                    con.Close();
+                    rdr = login.SelectCity(out con);
+                    txtCity.Items.Clear();
+                    txtCity.Items.Add("None");
+                    while (rdr.Read())
+                    {
+                        string str = rdr.GetString("city");
+                        txtCity.Items.Add(str);
+                    }
+                    con.Close();
+                    rdr = login.SelectLoc(out con);
+                    txtLocation.Items.Clear();
+                    txtLocation.Items.Add("None");
+                    while (rdr.Read())
+                    {
+                        string str = rdr.GetString("locality");
+                        txtLocation.Items.Add(str);
+                    }
+                    con.Close();
+                }
 				//txtCountry.Items.Add("lalit");
 
 			}
@@ -124,10 +125,10 @@ namespace VoteMe.elections
             //over
 
             Election ele = new Election();
-           country = txtCountry.SelectedItem.Text.Trim();
-            city = txtCity.SelectedItem.Text.Trim();
-           locality = txtLocation.SelectedItem.Text.Trim();
-            state = txtState.SelectedItem.Text.Trim();
+            country = txtCountry.SelectedItem.ToString().Trim();
+            city = txtCity.SelectedItem.ToString().Trim();
+            locality = txtLocation.SelectedItem.ToString().Trim();
+            state = txtState.SelectedItem.ToString().Trim();
             MySqlDataReader rdr = null;
             if(state.Equals("None")){
                 state = "All States";

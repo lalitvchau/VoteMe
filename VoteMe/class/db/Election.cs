@@ -19,7 +19,7 @@ namespace VoteMe.@class.db
 			{
 				
 				
-                MySqlCommand com = new MySqlCommand(@"insert into events(eventName,eventDate,country,state,city,location,username) values('" + eventName .Trim()+ "','" + eventDate.Trim() + "','" + country.Trim() + "','" + state.Trim() + "','" + state.Trim() + "','" + location.Trim() +"','" + username.Trim() + "')", con);
+                    MySqlCommand com = new MySqlCommand(@"insert into events(eventName,eventDate,country,state,city,location,username) values('" + eventName .Trim()+ "','" + eventDate.Trim() + "','" + country.Trim() + "','" + state.Trim() + "','" + city.Trim() + "','" + location.Trim() +"','" + username.Trim() + "')", con);
 				
 					if (com.ExecuteNonQuery() > 0)
 					{

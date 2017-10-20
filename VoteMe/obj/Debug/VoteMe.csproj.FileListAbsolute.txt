@@ -1,9 +1,6 @@
 /Users/vivaan2890/Projects/VoteMe/VoteMe/bin/VoteMe.dll
 /Users/vivaan2890/Projects/VoteMe/VoteMe/bin/VoteMe.pdb
 /Users/vivaan2890/Projects/VoteMe/VoteMe/bin/MySql.Data.dll
-/Users/vivaan2890/Projects/VoteMe/VoteMe/bin/MySql.Data.Entity.EF5.dll
-/Users/vivaan2890/Projects/VoteMe/VoteMe/bin/MySql.Data.Entity.EF6.dll
-/Users/vivaan2890/Projects/VoteMe/VoteMe/bin/MySql.Web.dll
 /Users/vivaan2890/Projects/VoteMe/VoteMe/obj/Debug/VoteMe.csprojResolveAssemblyReference.cache
 /Users/vivaan2890/Projects/VoteMe/VoteMe/obj/Debug/VoteMe.csproj.CoreCompileInputs.cache
 /Users/vivaan2890/Projects/VoteMe/VoteMe/obj/Debug/VoteMe.dll

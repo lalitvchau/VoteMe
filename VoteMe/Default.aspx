@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <link rel="shortcut icon" type="image/x-icon" href="images/signup.jpg" />
 </head>
 <body style="margin:5px;padding:12px;color:white;height:100%;" class="bg-dark card">
 <div class="row" >

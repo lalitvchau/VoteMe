@@ -27,17 +27,18 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke"  class="form-control" BackColor="LightGreen" id="txtEventName" placeholder="Event Name" Width="100%" MaxLength="20" runat="server"/>
                                   </li>
+							
     <li class="list-group-item bg-success"><asp:Calendar  ForeColor="DarkGreen" class="form-control" BackColor="LightGreen" id="txtEventDate" ShowDayHeader="true" runat="server" MaxLength="20" Width="100%" ToolTip="Select The Vooting Event Date"/></li>
      <li class="list-group-item bg-dark">Select Country</li>
-    <li class="list-group-item bg-success"><asp:DropDownList AutoPostBack="false"  ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtCountry"  runat="server"  Width="100%" >
+    <li class="list-group-item bg-success"><asp:DropDownList  ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtCountry"  runat="server"  Width="100%" >
 					</asp:DropDownList></li>
 							
     <li class="list-group-item bg-dark">Select State</li>
-    <li class="list-group-item bg-success"><asp:DropDownList AutoPostBack="false"   class="form-control"  ForeColor="WhiteSmoke" BackColor="LightGreen" id="txtState"  runat="server"  Width="100%"  /></li>
+    <li class="list-group-item bg-success"><asp:DropDownList  class="form-control"  ForeColor="WhiteSmoke" BackColor="LightGreen" id="txtState"  runat="server"  Width="100%"  /></li>
     <li class="list-group-item bg-dark">Select City</li>
-	<li class="list-group-item bg-success"><asp:DropDownList AutoPostBack="false"  class="form-control"   ForeColor="WhiteSmoke" BackColor="LightGreen" id="txtCity" runat="server" Width="100%"  /></li>
+	<li class="list-group-item bg-success"><asp:DropDownList   class="form-control"   ForeColor="WhiteSmoke" BackColor="LightGreen" id="txtCity" runat="server" Width="100%"  /></li>
     <li class="list-group-item bg-dark">Select Locality</li>
-	<li class="list-group-item bg-success"><asp:DropDownList AutoPostBack="false" class="form-control"  BackColor="LightGreen" ForeColor="WhiteSmoke" id="txtLocation" Text="Location" runat="server"  Width="100%"  /></li>  
+	<li class="list-group-item bg-success"><asp:DropDownList class="form-control"  BackColor="LightGreen" ForeColor="WhiteSmoke" id="txtLocation" runat="server"  Width="100%"  /></li>  
     <li class="list-group-item bg-dark">First Candidate Details</li>
 	<li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcName1" placeholder="Candidate Name" Width="100%" MaxLength="20" runat="server"/></li>
     <li class="list-group-item bg-success"><asp:TextBox ForeColor="WhiteSmoke" class="form-control" BackColor="LightGreen" id="txtcAadhar1" placeholder="Candidate Aadhar" Width="100%" MaxLength="12" runat="server"/></li>

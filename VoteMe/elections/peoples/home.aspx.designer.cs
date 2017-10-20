@@ -12,5 +12,10 @@ namespace VoteMe.elections.peoples {
 	
 	
 	public partial class home {
+		protected System.Web.UI.WebControls.Label nameUserName;
+		protected System.Web.UI.WebControls.Label gender;
+		protected System.Web.UI.WebControls.Label addr;
+		protected System.Web.UI.WebControls.Label mobile;
+		protected System.Web.UI.WebControls.Button sout;
 	}
 }
