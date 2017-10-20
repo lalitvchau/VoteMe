@@ -1,13 +1,5 @@
 ﻿<Properties StartupConfiguration="{A49EF9CD-81C4-4B90-8AE8-2B9505DADD01}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VoteMe/elections/peoples/Vote.aspx.cs">
-    <Files>
-      <File FileName="VoteMe/Default.aspx.cs" Line="60" Column="5" />
-      <File FileName="VoteMe/elections/peoples/Vote.aspx.cs" Line="151" Column="85" />
-      <File FileName="VoteMe/elections/peoples/Vote.aspx" Line="56" Column="84" />
-      <File FileName="VoteMe/elections/peoples/home.aspx.cs" Line="109" Column="49" />
-      <File FileName="VoteMe/elections/peoples/Vote.aspx.designer.cs" Line="24" Column="61" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

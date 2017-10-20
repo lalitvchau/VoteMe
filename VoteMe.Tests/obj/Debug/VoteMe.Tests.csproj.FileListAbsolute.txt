@@ -1,0 +1,2 @@
+/Users/vivaan2890/Projects/VoteMe/VoteMe.Tests/obj/Debug/VoteMe.Tests.csprojResolveAssemblyReference.cache
+/Users/vivaan2890/Projects/VoteMe/VoteMe.Tests/obj/Debug/VoteMe.Tests.csproj.CoreCompileInputs.cache
