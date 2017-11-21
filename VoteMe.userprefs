@@ -1,5 +1,9 @@
 ﻿<Properties StartupConfiguration="{A49EF9CD-81C4-4B90-8AE8-2B9505DADD01}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VoteMe/Default.aspx">
+    <Files>
+      <File FileName="VoteMe/Default.aspx" Line="123" Column="190" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
