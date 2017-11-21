@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A49EF9CD-81C4-4B90-8AE8-2B9505DADD01}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VoteMe</RootNamespace>
+    <AssemblyName>VoteMe</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\..\..\Downloads\mysql-connector-net-6\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF5">
+      <HintPath>..\..\..\Downloads\mysql-connector-net-6\v4.5\MySql.Data.Entity.EF5.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\..\Downloads\mysql-connector-net-6\v4.5\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="resource\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="resource\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="resource\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="resource\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="otherResource\index.css" />
+    <Content Include="otherResource\validation.js" />
+    <Content Include="resource\i.JPG" />
+    <Content Include="resource\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="resource\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="resource\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="resource\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="resource\bootstrap\css\bootstrap.css" />
+    <Content Include="resource\bootstrap\css\bootstrap.min.css" />
+    <Content Include="resource\bootstrap\js\bootstrap.js" />
+    <Content Include="resource\bootstrap\js\bootstrap.min.js" />
+    <Content Include="resource\jquery\jquery-3.1.1.min.js" />
+    <Content Include="elections\eleHome.aspx" />
+    <Content Include="elections\peoples\home.aspx" />
+    <Content Include="images\a.jpg" />
+    <Content Include="images\b.jpg" />
+    <Content Include="images\c.jpg" />
+    <Content Include="images\signup.jpg" />
+    <Content Include="elections\signup.aspx" />
+    <Content Include="elections\AddNewEvent.aspx" />
+    <Content Include="elections\peoples\Vote.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\eleHome.aspx.cs">
+      <DependentUpon>eleHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\eleHome.aspx.designer.cs">
+      <DependentUpon>eleHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="class\db\DBConnection.cs" />
+    <Compile Include="class\db\EmptyClass.cs" />
+    <Compile Include="class\db\Login.cs" />
+    <Compile Include="elections\peoples\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\peoples\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="class\db\SignUp.cs" />
+    <Compile Include="class\db\Officer.cs" />
+    <Compile Include="elections\AddNewEvent.aspx.cs">
+      <DependentUpon>AddNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\AddNewEvent.aspx.designer.cs">
+      <DependentUpon>AddNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="class\db\Election.cs" />
+    <Compile Include="class\db\Events.cs" />
+    <Compile Include="class\db\UserInfo.cs" />
+    <Compile Include="elections\peoples\Vote.aspx.cs">
+      <DependentUpon>Vote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="elections\peoples\Vote.aspx.designer.cs">
+      <DependentUpon>Vote.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="resource\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="resource\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="resource\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="resource\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="resource\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="resource\bootstrap\css\bootstrap.css.map" />
+    <None Include="resource\bootstrap\css\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+    <Folder Include="elections\" />
+    <Folder Include="elections\peoples\" />
+    <Folder Include="images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
